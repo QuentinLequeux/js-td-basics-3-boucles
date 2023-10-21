@@ -25,3 +25,12 @@
     - que se passe-t-il si vous avez déclaré i avec let ?
     - que se passe-t-il si vous déclarez i avec var ?
 */
+
+const multi = parseInt(prompt("Je voudrais afficher les 10 premières valeurs de la table de multiplication par :"))
+
+console.log(`Voici les 10 premières valeurs de la table de multiplication par ${multi}`);
+
+for (let i=1; i<=10; i++){
+    const resultat = i * multi
+    console.log(`${i} * ${multi} = ${resultat}`);
+}

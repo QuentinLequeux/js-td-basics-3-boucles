@@ -25,10 +25,15 @@ BONUS :
 - Après avoir quitté la boucle, affichez dans la console la chaîne complète saisie par l'utilisateur en concaténant les lettres.
 */
 
-
-
-
+while (true){
+    const isTrue= prompt("Tapez une lettre ou X pour sortir :");
+    if (isTrue === null || isTrue === "" || parseInt(isTrue)){
+        alert("Tapez une lettre ou X pour sortir :");
+    } else if (isTrue === "X"){
+        console.log("Bravo");
+        break;
+    }
+}
 
 // code avec le bonus
-
 
